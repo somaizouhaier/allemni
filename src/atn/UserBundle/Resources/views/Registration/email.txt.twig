@@ -1,0 +1,13 @@
+{% block subject %}
+{% autoescape false %}
+{{ 'registration.email.subject'|trans({'%username%': user.username, '%confirmationUrl%': confirmationUrl}, 'FOSUserBundle') }}
+{% endautoescape %}
+{% endblock %}
+{% block body_text %}
+{% autoescape false %}
+    Bonjour {{ user.username }} 
+   encore text 
+    <a href="{{ confirmationUrl }}">cliquerici</a>
+{% endautoescape %}
+{% endblock %}
+{% block body_html %}{% endblock %}

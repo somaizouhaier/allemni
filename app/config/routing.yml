@@ -1,0 +1,20 @@
+atn_user:
+    resource: "@atnUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_user_security:
+    resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+    prefix: /profile
+
+fos_user_profile:
+    resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
+    prefix: /profile
+
+atn_user_register:
+    resource: "@atnUserBundle/Resources/config/routing/registration.xml"
+    prefix: /
+
+fos_user_resetting:
+    resource: "@FOSUserBundle/Resources/config/routing/resetting.xml"
+    prefix: /resetting
+

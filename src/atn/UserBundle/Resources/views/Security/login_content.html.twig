@@ -11,7 +11,7 @@
                         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
                         <div class="form-group input-group">
                             <span class="input-group-addon"><i class="fa fa-tag"></i></span>
-                            <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required"  placeholder=" pseudonyme"  data-toggle="tooltip" data-placement="right">
+                            <input type="text" class="form-control" id="usermail" name="_username" value="{{ last_username }}" required="required"  placeholder=" pseudonyme"  data-toggle="tooltip" data-placement="right">
                         </div>
                         <div class="form-group input-group">
                             <span class="input-group-addon"><i class="fa fa-lock"></i></span>
@@ -28,8 +28,7 @@
                        
                             <button type="submit" id="_submit" name="_submit"  class="btn btn-success">Connectez-vous&nbsp&nbsp<span class="glyphicon glyphicon-chevron-right"></span></button>
 
-                            <a href="{{ path('atn_user_registration_register') }}" id="_submit" name="_submit"  type="button" class=" btn btn-danger btn-inscri" >Inscrivez-vous&nbsp&nbsp <span class="glyphicon glyphicon-chevron-right"></span></a>
-                         
+                           
                     </form>
                 </div>
 

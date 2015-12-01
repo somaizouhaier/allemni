@@ -13,7 +13,7 @@ security:
     # http://symfony.com/doc/current/book/security.html#where-do-users-come-from-user-providers
     providers:
         fos_userbundle:
-            id: fos_user.user_provider.username
+            id: fos_user.user_provider.username_email
 
     # the main part of the security, where you can set up firewalls
     # for specific sections of your app
@@ -31,7 +31,7 @@ security:
                 check_path:     fos_user_security_check
                 csrf_provider: form.csrf_provider
                 always_use_default_target_path: false
-                default_target_path:       atn_dashboard_index
+                default_target_path:       atn_newsFile_display
             logout:       
                 path:   fos_user_security_logout
                 target: fos_user_security_login

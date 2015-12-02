@@ -1,3 +1,0 @@
-atn_user_registration_register:
-    path:      /accueil
-    defaults:  { _controller: atnUserBundle:Registration:register }

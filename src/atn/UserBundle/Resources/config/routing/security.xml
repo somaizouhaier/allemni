@@ -4,8 +4,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/routing http://symfony.com/schema/routing/routing-1.0.xsd">
 
-    <route id="fos_user_security_login" path="/login" methods="GET POST">
-        <default key="_controller">FOSUserBundle:Registration:accueil</default>
+    <route id="fos_user_security_login" path="/" methods="GET POST">
+        <default key="_controller">FOSUserBundle:Registration:loginAndRegister</default>
     </route>
 
     <route id="fos_user_security_check" path="/login_check" methods="POST">

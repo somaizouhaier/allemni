@@ -1,0 +1,3 @@
+atn_class_room_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: atnClassRoomBundle:Default:index }

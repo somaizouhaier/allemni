@@ -1,0 +1,4 @@
+services:
+#    atn_class_room.example:
+#        class: atn\ClassRoomBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,3 +1,15 @@
+atn_place:
+    resource: "@atnPlaceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+atn_resource:
+    resource: "@atnResourceBundle/Resources/config/routing.yml"
+    prefix:   /
+
+atn_class_room:
+    resource: "@atnClassRoomBundle/Resources/config/routing.yml"
+    prefix:   /
+
 atn_user:
     resource: "@atnUserBundle/Resources/config/routing.yml"
     prefix:   /

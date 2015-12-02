@@ -108,6 +108,11 @@ class User extends BaseUser
     */
     protected $updatingDate;
     
+    /**
+     * @ORM\OneToMany(targetEntity="UserClassRoom", mappedBy="member", cascade={"remove", "persist"})
+     */
+    protected $userClassRooms;
+    
     
      /**
      * @return string
@@ -374,5 +379,38 @@ class User extends BaseUser
     public function getUpdatingDate()
     {
         return $this->updatingDate;
+    }
+
+    /**
+     * Add userClassRooms
+     *
+     * @param \atn\UserBundle\Entity\UserClassRoom $userClassRooms
+     * @return User
+     */
+    public function addUserClassRoom(\atn\UserBundle\Entity\UserClassRoom $userClassRooms)
+    {
+        $this->userClassRooms[] = $userClassRooms;
+
+        return $this;
+    }
+
+    /**
+     * Remove userClassRooms
+     *
+     * @param \atn\UserBundle\Entity\UserClassRoom $userClassRooms
+     */
+    public function removeUserClassRoom(\atn\UserBundle\Entity\UserClassRoom $userClassRooms)
+    {
+        $this->userClassRooms->removeElement($userClassRooms);
+    }
+
+    /**
+     * Get userClassRooms
+     *
+     * @return \Doctrine\Common\Collections\Collection 
+     */
+    public function getUserClassRooms()
+    {
+        return $this->userClassRooms;
     }
 }

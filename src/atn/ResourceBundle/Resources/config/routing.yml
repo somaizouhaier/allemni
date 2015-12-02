@@ -1,0 +1,3 @@
+atn_resource_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: atnResourceBundle:Default:index }

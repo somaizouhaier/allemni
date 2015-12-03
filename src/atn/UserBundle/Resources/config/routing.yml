@@ -2,4 +2,8 @@ atn_user_password_init:
     path:    /réussie/{token}
     defaults: { _controller: atnUserBundle:Resetting:init }
     
+atn_user_home:
+    path:    /home
+    defaults: { _controller: atnUserBundle:Home:home }
+    
 

@@ -40,7 +40,7 @@ class ClassRoom {
     protected $removeDate;
 
     /**
-     * @ORM\ManyToOne(targetEntity="community", inversedBy="classRooms", cascade={"remove"})
+     * @ORM\ManyToOne(targetEntity="Community", inversedBy="classRooms", cascade={"remove"})
      * @ORM\JoinColumn(referencedColumnName="id")
      */
     protected $community;

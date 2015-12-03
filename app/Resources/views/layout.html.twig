@@ -9,20 +9,26 @@
         <!-- Js Tree Styles-->
         
         <link href="{{ asset('css/font/font.css')}}" rel="stylesheet" />
-        <link href="{{ asset('css/lib/bootstrap.css')}}" rel="stylesheet" />
+         <link href="{{ asset('css/lib/toolkit.css')}}" rel="stylesheet" />
+        <link href="{{ asset('css/lib/application.css')}}" rel="stylesheet" />
+       
+     {#   <link href="{{ asset('css/lib/bootstrap.css')}}" rel="stylesheet" /> #}
         <link href="{{ asset('css/main.css')}}" rel="stylesheet" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
         <script src="{{ asset('js/main.js')}}"></script>
         <script src="{{ asset('js/lib/jquery-2.1.4.js')}}"></script>
-        <script src="{{ asset('js/lib/bootstrap.js')}}"></script>
+        <script src="{{ asset('js/lib/application.js')}}"></script>
+        <script src="{{ asset('js/lib/toolkit.js')}}"></script>
+        
+       {# <script src="{{ asset('js/lib/bootstrap.js')}}"></script> #}
         
         {% endblock block_head %}
         
          {% block block_style %}
          {% endblock block_style %}
     </head>
-    <body>
+    <body class="ang">
          {% block block_body %}
          {% endblock block_body %}
     </body>

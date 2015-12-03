@@ -29,7 +29,17 @@
          {% endblock block_style %}
     </head>
     <body class="ang">
-         {% block block_body %}
+        {% block block_body %}
+            
+            {% block block_left %}
+            {% endblock block_left %}
+
+            {% block block_middle %}
+            {% endblock block_middle %}
+
+            {% block block_right %}
+            {% endblock block_right %}
+         
          {% endblock block_body %}
     </body>
 </html>
